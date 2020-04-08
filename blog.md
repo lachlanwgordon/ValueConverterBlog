@@ -76,16 +76,36 @@ The next step is to add the converter as a `StaticResource` so that our xaml pro
  * How to use
  * GIF of wizard in action
  
+ A lot of this boiler plate can be skipped by having MFractor generate the converter for you using the wizard or from a quick fix in a xaml file.
+ 
+ To access the Value Converter Wizard, open the `MFractor` Menu, then `Wizards`, then `Value Converter Wizard`. In many cases all you will need to do here is give your converter a name and click `Generate Value Converter` and you'll be good to go. You'll have a the methods half way implemented with type checking and casting all wired up and only your logic left to implement. It will also declare the value converter as a `StaticResource` so you can use it in a binding straight away.
+ 
+ If you've followed the naming convention of `{Type}To{Type}Converter` MFractor can infer the types you're working with the so the type checks can be handled for you. If you've named your converter differently or you disable `Infer Input/Output Types` you can stil manually specify the types. Along with the input/output types you can also specify a parameter type if required to get you one step closer to a complete converter.
+ 
+ The final preference lets you chose where you want the `StaticResource` to be declared. If you have a xaml file open when you run the wizard you'll have the option of of adding it to the page's resources, otherwise you can add it to your App.xaml for access from all pages.
+ 
+ 
+ 
 ## Generate from XAML quick fix
  * how to use
  * GIF of gen in action
  
+ The wizard is great but if your working away on a xaml file and you suddenly discover your need a converter, you can also generate a converter from the right click menu, along side all the other MFractor refactorings and generations and the built in Visual Studio quick fixes. The action from the right click menu gives you all the same benefits as accessing the wizard from the menu, with the added benefit of setting the value converter on your binding.
+ 
+ 
+ 
 ## Benefits for MVVM 
- * No colors in VM
+ValueConverters don't require you to follow an MVVM patern but the do work really nicely together and help to keep your view models clean and easier to read.
+
+Some of the benefits for your view models include:
+ * No colors in your view models. Their presence here is up for debate but if you want to cut down on how much `V` is in your `VM` these can be some of the hardest parts to separate out without ValueConverters
  * remove getters for derived fields
- * Remove complex getters setters for IsBusy/IsNotBusy
+ * Remove complex getters setters where values are linked e.g. IsBusy/IsNotBusy
+ * Reduce calls to OnPropertyChanged() by allowing you to bind multiple view properties to one view model property.
  
 ## Advanced
  * Parameter(snippet)
  * Attribute(snippet)
+ 
 ## Summary
+Value converters are one of those neat features in Xamarin.Forms where once you start using them, you won't know how you lived without them. Having your type conversion logic in one reusable place lets you focus on the code that matters in your view models without as much noise. Their main drawback is that their is a fair bit of boilerplate to get started but MFractor does all the heavy lifting for you with just a little prompting.
