@@ -10,6 +10,11 @@ Other useful scenarios for using a value converter include:
 * Changing the text displayed on a button based on the current state of an item
 * Highlighting an area in red if it is a negative number
 
+
+## Example
+ 
+ 
+ 
  
 ## How to use a value converter
 Using a value converter typically involves three steps
@@ -105,6 +110,11 @@ Some of the benefits for your view models include:
  
 ## Advanced
  * Parameter(snippet)
+ 
+ Sometimes a value converter needs input from the view to provide context, this is where the `ValueConverterParameter` comes in handy.
+ 
+ 
+ 
  * Attribute(snippet)
  
 ## Summary
