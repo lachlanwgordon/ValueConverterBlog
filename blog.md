@@ -210,8 +210,7 @@ Value converters are one of those neat features in Xamarin.Forms where once you 
 
 ## Resources
 
-All code snippets used in this post are in the sample app on github.
-[https://github.com/lachlanwgordon/ValueConverterSample](https://github.com/lachlanwgordon/ValueConverterSample)
+All code snippets used in this post are in the sample app on github: [https://github.com/lachlanwgordon/ValueConverterSample](https://github.com/lachlanwgordon/ValueConverterSample)
 
 Official Xamarin Documentation:  
 [https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/converters](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/converters)
