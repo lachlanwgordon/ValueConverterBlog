@@ -216,7 +216,7 @@ Official Xamarin Documentation:
 [https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/converters](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/converters)
 
 ## About The Author
-Lachlan is a freelance Xamarin developer who has recently been branching out into Blazor. As a co-organizer of the [Blazor and Xamarin Meetup](https://www.meetup.com/Melbourne-Xamarin-Meetup/) he regularly presents on whatever his latest .Net adventure has been. When not writing C# you'll usually find him riding a bike our playing double bass. 
+Lachlan is a freelance Xamarin developer who has recently been branching out into Blazor. As a co-organizer of the [Blazor and Xamarin Meetup](https://www.meetup.com/Melbourne-Xamarin-Meetup/) he regularly presents on whatever his latest .Net adventure has been. When not writing C# you'll usually find him riding a bike or playing double bass. 
 
 You can find him on Twitter
 [@lachlanwgordon](twitter.com/lachlanwgordon), Github [github.com/lachlanwgordon](github.com/lachlanwgordon), LinkedIn [linkedin.com/in/lachlanwgordon](https://www.linkedin.com/in/lachlanwgordon), live coding at [twitch.tv/lachlanwgordon](twitch.tv/lachlanwgordon) and blogging on [lachlanwgordon.com](https://lachlanwgordon.com).
